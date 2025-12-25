@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простая викторина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Простая викторина</h1>
+        
+        <div id="start-screen" class="screen">
+            <h2>Добро пожаловать!</h2>
+            <p>Проверьте свои знания в этой простой викторине.</p>
+            <button id="start-btn">Начать викторину</button>
+        </div>
+        
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress">
+                Вопрос <span id="current-question">1</span> из <span id="total-questions">5</span>
+            </div>
+            <h2 id="question-text">Текст вопроса</h2>
+            <div id="options-container" class="options">
+                <!-- Варианты ответов появятся здесь -->
+            </div>
+            <button id="next-btn" class="hidden">Следующий вопрос</button>
+        </div>
+        
+        <div id="result-screen" class="screen hidden">
+            <h2>Результаты викторины</h2>
+            <div class="score">Вы набрали: <span id="score">0</span> из <span id="max-score">5</span></div>
+            <p id="result-message"></p>
+            <button id="restart-btn">Пройти еще раз</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
